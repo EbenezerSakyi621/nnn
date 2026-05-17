@@ -140,3 +140,17 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #38bdf8;
 }
+@media (max-width: 768px) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .blur-heavy,
+  .glass-effect {
+    backdrop-filter: none !important;
+    filter: none !important;
+  }
+}
